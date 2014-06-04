@@ -20,6 +20,9 @@ RUN \
 # Add files.
 ADD start.bash /ghost-start
 
+# Change ghost schema.js file
+ADD schema.js /ghost/core/server/data/
+
 # Set environment variables.
 ENV NODE_ENV production
 
